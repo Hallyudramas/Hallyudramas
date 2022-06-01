@@ -6,34 +6,26 @@
     overflow: hidden;
 }
 
-.slider {
+.article {
     padding: 40px 0;
 }
 
-.slider-container {
+.article-container {
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
     align-items: center;
     gap: 1em;
 }
 
-.slider-body {
+.article-body {
     grid-column: 2/3;
     grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
     display: grid;
     grid-template-columns: 1fr max-content;
     align-items: center;
-    transition: opacity 1.5s;
 }
 
-.slider-body-show {
-    opacity: 1;
-    pointer-events: unset;
-}
-
-.slider-texts {
+.article-texts {
     max-width: 600px;
 }
 
@@ -43,14 +35,14 @@
     margin-bottom: 20px;
 }
 
-.slider-review {
+.article-review {
     color: #f2f2f2;
     font-weight: 300;
     font-size: 20px;
     line-height: 1.7;
 }
 
-.slider-texts .botton-watch {
+.article-texts .botton-watch {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -61,7 +53,7 @@
     border-radius: 6px;
 }
 
-.slider-texts .botton-list {
+.article-texts .botton-list {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
@@ -75,7 +67,7 @@
     font-weight: bold;
 }
 
-.slider-img {
+.article-img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -84,42 +76,29 @@
     margin: 0 auto;
 }
 
-.slider-arrow {
-    cursor: pointer;
-    width: 90%;
-}
-
-.slider-arrow:nth-of-type(2) {
-    justify-self: end;
-}
-
 @media (max-width:768px) {
-    .slider-body {
+    .article-body {
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap: 1em;
     }
 
-    .slider-picture {
+    .article-picture {
         grid-row: 1/2;
     }
 
-    .slider-img {
+    .article-img {
         width: 210px;
         height: 210px;
     }
 }
 
 @media (max-width:425px) {
-    .slider-container {
+    .article-container {
         grid-template-columns: 25px 1fr 25px;
     }
 
-    .slider-arrow {
-        width: 100%;
-    }
-
-    .slider-img {
+    .article-img {
         width: 180px;
         height: 180px;
     }
@@ -129,7 +108,7 @@
         margin-bottom: 15px;
     }
 
-    .slider-review {
+    .article-review {
         font-size: 1rem;
         line-height: 1.6;
     }
