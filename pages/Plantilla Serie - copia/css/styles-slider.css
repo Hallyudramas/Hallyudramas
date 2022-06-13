@@ -68,6 +68,15 @@
     font-weight: bold;
 }
 
+.article-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
 @media (max-width:768px) {
     .article-body {
         grid-template-columns: 1fr;
@@ -79,6 +88,10 @@
         padding: 0 30px;
     }
 
+    .article-picture {
+        grid-row: 1/2;
+    }
+
     .article-img {
         width: 210px;
         height: 210px;
@@ -88,6 +101,11 @@
 @media (max-width:425px) {
     .article-container {
         grid-template-columns: 25px 1fr 25px;
+    }
+
+    .article-img {
+        width: 180px;
+        height: 180px;
     }
 
     .subtitle {
