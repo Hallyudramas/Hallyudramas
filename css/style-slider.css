@@ -100,6 +100,14 @@
         gap: 1em;
     }
 
+    .slider-texts {
+        text-align: center;
+    }
+
+    .slider-review {
+        display: none;
+    }
+
     .slider-picture {
         grid-row: 1/2;
     }
@@ -113,6 +121,14 @@
 @media (max-width:425px) {
     .slider-container {
         grid-template-columns: 25px 1fr 25px;
+    }
+
+    .slider-texts {
+        text-align: center;
+    }
+
+    .slider-review {
+        display: none;
     }
 
     .slider-arrow {
