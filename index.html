@@ -10,7 +10,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/styles-navbar.css">
-    <link rel="stylesheet" href="./css/style-slider.css">
+    <link rel="stylesheet" href="./css/styles-slide-cards.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- Title Page -->
     <title>Hallyudramas</title>
 </head>
@@ -30,130 +31,92 @@
         </div>
     </nav>
 
-    <!-- Slider -->
-    <section class="slider">
-        <div class="slider-container container">
-            <img src="./assets/arrowleft.svg" class="slider-arrow" id="before" alt="">
-            
-            <!-- Slider -->
-            <section class="slider-body slider-body-show" data-id="1">
-                <div class="slider-texts">
-                    <h2 class="subtitle">Jinxed at First</h2>
-                    <p class="slider-review">
-                        Gira en torno a un hombre que acepta su desafortunado destino y una diosa que salta al mundo real para romper su maldición. Gong Soo Gwang, un maestro cervecero que dirige una tienda de cerveza artesanal.
-                    </p>
-                    <a href="https://hallyudramas.github.io/jinxed-at-first" class="botton-watch">Watch Now</a>
-                    <a href="https://hallyudramas.github.io/jinxed-at-first" class="botton-list">List Episodes</a>
+    <!-- Slider main container -->
+    <div class="slide-container swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+        <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="circle">
+                            <h2>Why Her</h2>
+                        </div>
+                        <div class="content">
+                            <p>Cuenta la historia de una mujer que toma la decisión equivocada en la vida y vive para el éxito equivocado.</p>
+                            <a href="https://hallyudramas.github.io/whyher">Ver ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card2">
+                        <div class="circle">
+                            <h2>Jinxed at First</h2>
+                        </div>
+                        <div class="content">
+                            <p>Gira en torno a un hombre que acepta su desafortunado destino y una diosa que salta al mundo real para romper su maldición.</p>
+                            <a href="https://hallyudramas.github.io/jinxed-at-first">Ver ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card3">
+                        <div class="circle">
+                            <h2>Link</h2>
+                        </div>
+                        <div class="content">
+                            <p>Hace unos 20 años, la hermana gemela de Eun Kye Hoon desapareció. Ahora es un adulto y trabaja como chef.</p>
+                            <a href="https://hallyudramas.github.io/link">Ver ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card4">
+                        <div class="circle">
+                            <h2>Love All Play</h2>
+                        </div>
+                        <div class="content">
+                            <p>Park Tae Yang era una prometedora atleta de bádminton. Debido a un incidente, dejó el deporte del bádminton. </p>
+                            <a href="https://hallyudramas.github.io/love-all-play">Ver ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card5">
+                        <div class="circle">
+                            <h2>The Killer's Shopping List</h2>
+                        </div>
+                        <div class="content">
+                            <p>Dae Sung tiene una memoria excelente y es una persona tímida.</p>
+                            <a href="https://hallyudramas.github.io/the-killers-shopping-list">Ver ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card6">
+                        <div class="circle">
+                            <h2>Tomorrow</h2>
+                        </div>
+                        <div class="content">
+                            <p>Choi Joon Woong busca trabajo, pero le resulta difícil que lo contraten. Excepto por eso, parece un chico perfecto.</p>
+                            <a href="https://hallyudramas.github.io/tomorrow">Ver ahora</a>
+                        </div>
+                    </div>
                 </div>
 
-                <figure class="slider-picture">
-                    <img src="./assets/Covers Series/Jinxed_at_First-KBS2-2022-03.webp" class="slider-img">
-                </figure>
-            </section>
+            </div>
 
-            <!-- Slider -->
-            <section class="slider-body" data-id="2">
-                <div class="slider-texts">
-                    <h2 class="subtitle">Why Her</h2>
-                    <p class="slider-review">
-                        Cuenta la historia de una mujer que toma la decisión equivocada en la vida y vive para el éxito equivocado. Después de enamorarse de cierto joven, cambia el rumbo de su vida y aprende a amarse a sí misma como es debido.
-                    </p>
-                    <a href="https://hallyudramas.github.io/whyher" class="botton-watch">Watch Now</a>
-                    <a href="https://hallyudramas.github.io/whyher" class="botton-list">List Episodes</a>
-                </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
 
-                <figure class="slider-picture">
-                    <img src="./assets/Covers Series/Why_Her-SBS-2022-07.webp" class="slider-img">
-                </figure>
-            </section>
-
-            <!-- Slider -->
-            <section class="slider-body" data-id="3">
-                <div class="slider-texts">
-                    <h2 class="subtitle">Link</h2>
-                    <p class="slider-review">
-                        Hace unos 20 años, la hermana gemela de Eun Kye Hoon desapareció. Ahora es un adulto y trabaja como chef. Eun Kye Hoon decide abrir un restaurante donde desapareció su hermana gemela. Un día, de repente comparte las emociones de No Da Hyun como alegría, tristeza y dolor.
-                    </p>
-                    <a href="https://hallyudramas.github.io/link" class="botton-watch">Watch Now</a>
-                    <a href="https://hallyudramas.github.io/link" class="botton-list">List Episodes</a>
-                </div>
-
-                <figure class="slider-picture">
-                    <img src="./assets/Covers Series/Link_Eat_and_Love_To_Kill-tvN-2022-3.webp" class="slider-img">
-                </figure>
-            </section>
-            
-            <!-- Slider -->
-            <section class="slider-body" data-id="4">
-                <div class="slider-texts">
-                    <h2 class="subtitle">Love All Play</h2>
-                    <p class="slider-review">
-                        Park Tae Yang era una prometedora atleta de bádminton. Debido a un incidente, dejó el deporte del bádminton...
-                    </p>
-                    <a href="https://hallyudramas.github.io/love-all-play" class="botton-watch">Watch Now</a>
-                    <a href="https://hallyudramas.github.io/love-all-play" class="botton-list">List Episodes</a>
-                </div>
-
-                <figure class="slider-picture">
-                    <img src="./assets/Covers Series/Love_All_Play-KBS2-2022-02.webp" class="slider-img">
-                </figure>
-            </section>
-
-            <!-- Slider -->
-            <section class="slider-body" data-id="5">
-                <div class="slider-texts">
-                    <h2 class="subtitle">The Killer's Shopping List</h2>
-                    <p class="slider-review">
-                        Dae Sung tiene una memoria excelente y es una persona tímida. Aunque reprobó su examen para convertirse en funcionario público de noveno grado durante 3 años...
-                    </p>
-                    <a href="https://hallyudramas.github.io/the-killers-shopping-list" class="botton-watch">Watch Now</a>
-                    <a href="https://hallyudramas.github.io/the-killers-shopping-list" class="botton-list">List Episodes</a>
-                </div>
-
-                <figure class="slider-picture">
-                    <img src="./assets/Covers Series/The_Killers Shopping List tvN.webp" class="slider-img">
-                </figure>
-            </section>
-
-            <!-- Slider -->
-            <section class="slider-body" data-id="6">
-                <div class="slider-texts">
-                    <h2 class="subtitle">Business Proposal</h2>
-                    <p class="slider-review">
-                        Ha-ri acepta presentarse en una cita a ciegas en lugar de una amiga para asustar al pretendiente...
-                    </p>
-                    <a href="https://hallyudramas.github.io/business-proposal" class="botton-watch">Watch Now</a>
-                    <a href="https://hallyudramas.github.io/business-proposal" class="botton-list">List Episodes</a>
-                </div>
-
-                <figure class="slider-picture">
-                    <img src="./assets/Covers Series/Business Proposal.jpg" class="slider-img">
-                </figure>
-            </section>
-
-            <!-- Slider -->
-            <section class="slider-body" data-id="7">
-                <div class="slider-texts">
-                    <h2 class="subtitle">Alice</h2>
-                    <p class="slider-review">
-                        Debido a una muerte, un hombre y una mujer se separan para siempre, pero se vuelven a encontrar como por arte de magia...
-                    </p>
-                    <a href="https://hallyudramas.github.io/alice" class="botton-watch">Watch Now</a>
-                    <a href="https://hallyudramas.github.io/alice" class="botton-list">List Episodes</a>
-                </div>
-
-                <figure class="slider-picture">
-                    <img src="./assets/Covers Series/Alice SBS.jpg" class="slider-img">
-                </figure>
-            </section>
-
-
-            <img src="./assets/arrowright.svg" class="slider-arrow" id="after" alt="">
         </div>
-    </section>
+
+        
 
     <!-- Scripts -->
     <script src="./js/slider.js"></script>
     <script src="./js/navbar.menu.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>

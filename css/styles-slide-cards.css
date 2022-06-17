@@ -1,0 +1,139 @@
+.slide-container {
+    max-width: 1250px;
+    width: 100%;
+    min-height: 500px;
+    height: 85vh;
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide .card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #000;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.swiper-slide:hover .card {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.swiper-slide .card:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.swiper-slide .card .circle h2 {
+    color: #fff;
+    font-size: 2.5em;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.swiper-slide .card .content {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.swiper-slide .card .content p {
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.swiper-slide .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.swiper .swiper-navBtn {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.swiper .swiper-navBtn:hover {
+    color: #ffffff;
+}
+
+.swiper .swiper-navBtn::before,
+.swiper .swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.swiper .swiper-button-next {
+    right: 0;
+}
+
+.swiper .swiper-button-prev {
+    left: 0;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: #d6d6d6;
+    opacity: 1;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
+
+/* Cover Cards */
+.swiper-slide .card1 {
+    background-image: url(../images/Why\ Her.png);
+}
+
+.swiper-slide .card2 {
+    background-image: url(../images/Jinxed\ at\ First.png);
+}
+
+.swiper-slide .card3 {
+    background-image: url(../images/Link.png);
+}
+
+.swiper-slide .card4 {
+    background-image: url(../images/Love\ all\ Play.png);
+}
+
+.swiper-slide .card5 {
+    background-image: url(../images/The\ Killers\ Shopping\ List.png);
+}
+
+.swiper-slide .card6 {
+    background-image: url(../images/Tomorrow.png);
+}
